@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Devyani Ghildiyal - Portfolio</title>
+    <link rel="stylesheet" href="/coursera work/styles.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+            Devyani Ghildiyal
+          <div class="contact_info">
+            <img src="/coursera work/images.jpg" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          me@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="/coursera work/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +918887773332
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="/coursera work/typing.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Devyai Ghildiyal! <img src="/coursera work/wave.png" width="60px"/>
+          </h1>
+          <p>
+            I am a second-year B.Tech CSE student at MUJ.
+            I have studied data analysis and machine learning, 
+            and I am interested in learning full stack development to be able to host my own website.
+            I am eager to learn from this course.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="/coursera work/HTML.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="/coursera work/JS.webp"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+          <img src="/coursera work/PYTHON.png"/>
+          <h6>Python</h6>
+          <p>5 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="/coursera work/JAVA.jpg"/>
+          <h6>Java</h6>
+          <p>2 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="/coursera work/SQL.png"/>
+          <h6>SQL</h6>
+          <p>4 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="/coursera work/C.png"/>
+          <h6>C</h6>
+          <p>2 years experience</p>
+        </div> 
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Cyber Shield</h3>
+            <ul>
+              <li>Created a cyber security web extention that had 4 sub models within it. It had a password generator, URL checker, ransomware detector and Email spam checker.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Quill</h3>
+            <ul>
+              <li>Quill is a assignment solving robot ,that solves your assignment in your own writing. Prototype 1 has been deployed. Works for prototype 2 are ongoing</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Railway Management System</h3>
+            <ul>
+              <li>Created a railway management system using MySQL for college's RDBMS project. </li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Devyani is a quick learner and has effectively grasped all the key concepts of this full stack development 
+          course. Her curiosity drives her to ask insightful questions, 
+          take initiative within the team, and demonstrate leadership potential.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Devyani has been an exceptional experience.  
+          Her dedication and attention to detail are impressive. She is also a great communicator 
+          and a proactive problem solver. 
+          For any future projects, I would definitely want to collaborate with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Devyani during the initial phase of our venture which required technical expertise. 
+          She is a dedicated professional with profound knowledge of Python and SQL.
+          Devyani's proficiency makes her an invaluable asset to any organization! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <div class="tick_img">
+        <img src="/coursera work/tick.png"/>
+      </div>
+      
+      <h3><!-- Add appropriate text here-->Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
